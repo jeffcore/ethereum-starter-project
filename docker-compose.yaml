@@ -12,6 +12,7 @@ services:
   truffle:
     container_name: truffle
     build:
+      context: ./
       dockerfile: truffle.dockerfile
     command: bash
     stdin_open: true
