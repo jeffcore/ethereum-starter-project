@@ -1,0 +1,22 @@
+version: "3"
+
+services:
+  ganache:
+    image: trufflesuite/ganache-cli:latest 
+    container_name: ganache
+    ports:
+      - "8545:8545"
+    volumes:
+      - ./ganache-data:/ganache-data
+
+  truffle:
+    container_name: truffle
+    build:
+      dockerfile: truffle.dockerfile
+    command: bash
+    stdin_open: true
+    tty: true
+    volumes:
+      - ./dapp:/dapp
+    ports:
+      - "8099:8080"
