@@ -1,5 +1,7 @@
 # Ethereum Starter Project using Docker Containers
 
+Using truffle and ganache cli.
+
 ## How to use
 
 1. git clone this repo
