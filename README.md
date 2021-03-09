@@ -1,6 +1,6 @@
 # Ethereum Starter Project using Docker Containers
 
-Using truffle and ganache cli.
+Using Truffle and Ganache CLI.
 
 ## How to use
 
@@ -12,8 +12,9 @@ Using truffle and ganache cli.
 6. run $ docker-compose up truffle
 7. connect to truffle container $ docker attach truffle
 8. while inside the truffle container run $ truffle init
-9. cd to dapp directory and delete truffle-config.js
-10. rename truffle-config.js.ex to truffle-config.js
+9. exit truffle container
+10. on local machine cd to dapp directory and delete truffle-config.js
+11. rename truffle-config.js.ex to truffle-config.js
 
 ## Now the hard part
 
