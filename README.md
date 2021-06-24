@@ -1,6 +1,6 @@
 # Ethereum Starter Project using Docker Containers
 
-Using Truffle and Ganache CLI.
+Solidity 0.7.4 using Truffle and Ganache CLI.
 
 ## How to use
 
@@ -12,9 +12,11 @@ Using Truffle and Ganache CLI.
 6. run $ docker-compose up truffle
 7. connect to truffle container $ docker attach truffle
 8. while inside the truffle container run $ truffle init
-9. exit truffle container
-10. on local machine cd to dapp directory and delete truffle-config.js
-11. rename truffle-config.js.ex to truffle-config.js
+9. while inside the truffle container run $ npm install
+10. exit truffle container
+11. on local machine cd to dapp directory and delete truffle-config.js
+12. rename truffle-config.js.ex to truffle-config.js
+13. when you are ready to deploy to Ropsten test net, add the mnemonic key into .secret file
 
 ## Now the hard part
 
